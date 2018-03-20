@@ -50,7 +50,7 @@ int main(int e, char** t) {
 			return r(0,0);
 		}
 	}
-	if(e==-2) {
+	else if(e==-2) {
 		if(b.a == 0)
 			return 0;
 		r(-1,((l*)b.a)->b);
