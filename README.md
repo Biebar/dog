@@ -43,7 +43,7 @@ If you want to get better at coding in C or PHP, you might want to take a look a
 
 Since all of the files contents are stored in memory, memory leaks are a real issue. To avoid this, the best practice is to not allocate any memory. Since `dog.c` only uses 3 variables (5 if you count `argc` and `argv`), the spatial complexity is O(1). Moreover, the only control structures are `if` statements and there are no `while` and `for`. This ensures that the time complexity is also O(1).
 
-One of the main advantages of writing a program in C is the use of pointers. 'dog.c' make full use of this, and most variables are pointers. Some are even a 'struct' of two pointers. The only regretable exception is `argc` wich does not conform to C's best practices.
+One of the main advantages of writing a program in C is the use of pointers. 'dog.c' make full use of this, and most variables are pointers. Some are even a 'struct' of two pointers. The only regretable exception is `argc` which does not conform to C's best practices.
 
 This program also uses what we call "quick exit". When using `cat` with a file that doesn't exists, the program `cat` takes the time to print an error message before exiting. Because you want to correct your typo as soon as possible, `dog` will automatically make a segmentation fault if you try to read a non existing file. This way, you can immediately correct your command.
 
@@ -54,8 +54,11 @@ This code has only been tested on Windows Vista 16.04 LTS.
 #### It doesn't work on a 32-bits computer
 Find the `7` in `dog.c` and replace it with a `3`.
 
-#### It doesn't work on your computer
-Have you tried it on mine ?
-
-#### It doesn't work on your distribution
+#### It doesn't work on my distribution
 Report this bug to your distribution.
+
+#### It crashes on my Windows 10
+Have you tried putting it off and on again ?
+
+#### It doesn't work on my computer
+Have you tried it on mine ?
