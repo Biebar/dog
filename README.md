@@ -57,5 +57,5 @@ Have you tried it on mine ?
 #### It doesn't work on a 32-bits computer
 Find the 7 in `dog.c` and replace it with a `3`.
 
-#### It doesn't work on my distribution
+#### It doesn't work on your distribution
 Report this bug to your distribution.
