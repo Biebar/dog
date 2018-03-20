@@ -34,7 +34,7 @@ This isn't `cat`'s only shortcomings. You might want to use `cat - half_life3`. 
 
 ## Man (and woman)'s best friend
 
-The solution to the abovementinoned problems is simple. I made a program `dog` whose behaviour is close to `cat`. However, `dog` will load into memory every file it is given before printing them to `stdout`. You might say that this is a waste of memory, but please keep in mind that on a 64-bits machine, you have access to 16EB of RAM.
+The solution to the abovementioned problems is simple. I made a program `dog` whose behaviour is close to `cat`. However, `dog` will load into memory every file it is given before printing them to `stdout`. You might say that this is a waste of memory, but please keep in mind that on a 64-bits machine, you have access to 16EB of RAM.
 
 
 ### `dog.c`'s advantages
