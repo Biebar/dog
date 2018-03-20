@@ -51,11 +51,11 @@ This program also uses what we call "quick exit". When using `cat` with a file t
 
 This code has only been tested on Windows Vista 16.04 LTS.
 
+#### It doesn't work on a 32-bits computer
+Find the `7` in `dog.c` and replace it with a `3`.
+
 #### It doesn't work on your computer
 Have you tried it on mine ?
-
-#### It doesn't work on a 32-bits computer
-Find the 7 in `dog.c` and replace it with a `3`.
 
 #### It doesn't work on your distribution
 Report this bug to your distribution.
