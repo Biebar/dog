@@ -30,7 +30,7 @@ However, this command is not suited if you want to write a poem.
     Comme la nuit se fait lorsque le jour s'en va.
     ^D
 
-This isn't `cat`'s only shortcomings. You might want to use `cat - half_life3`. Obviously, the file `half_life3` doesn't exists. However, while you type a love letter in `stdin`, another user might create the file `half_life3` and you won't get an error message. Even if the file `half_life3` existed, this other malicious user might modify this file. This is clearly unwanted behaviour.
+This isn't `cat`'s only shortcomings. You might want to use `cat - half_life3`. Obviously, the file `half_life3` doesn't exist. However, while you type a love letter in `stdin`, another user might create the file `half_life3` and you won't get an error message. Even if the file `half_life3` existed, this other malicious user might modify this file. This is clearly unwanted behaviour.
 
 ## Man (and woman)'s best friend
 
