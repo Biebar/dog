@@ -17,7 +17,7 @@ One of the most useful commands is `cat`. You can use it as a discussion simulat
     I love you
     ^D
 
-However, this command is not suited if you want to write a poem.
+However, this command is not suited to for writing a poem.
 
     $cat
     Il dort. Quoique le sort fût pour lui bien étrange,
