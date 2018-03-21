@@ -2,9 +2,9 @@
 Cat Improved
 ## Usage
 
-    $gcc dog.c -o dog #Please ignore warnings
+    $make
     $./dog
-    $./dog dog.c -
+    $./dog dog.c README.md
 
 ## The problem with cats
 
