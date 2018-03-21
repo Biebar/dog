@@ -12,8 +12,8 @@ int main(int e, void* t) {
 	return e == -1
                ? printf("%s",
                         t != 0
-			? &((l*)t)->b + main(-1, ((l*)t)->a) + 2
-			: &a
+			? &((l*)t)->b + main(e, ((l*)t)->a) - 2*e
+			: (void*) &a
                        ),
 		 -2
                : (e > 1
@@ -28,24 +28,23 @@ int main(int e, void* t) {
                        ? EXIT_SUCCESS
                        : main(main((a=0,-1),((l*)t)->b),((l*)t)->a)
                      : (e == 1
-                        ? main(c
-                               - (a = c == 0
-                                      ? b.a = b.b = 0,
-                                        c = &b
-                                      : c),
+                        ? main(c - (a = c == 0
+                                        ? b.a = b.b = 0,
+                                          c = &b
+                                        : c),
 			       0)
-                        : (((char*)&b.b)[(int)(b.a=(void*)read((int)a->b, &b.b,sizeof(b.b)-1))] = 0,
-                          b.a != 0 // b.a != 0 means there is still some text to read
-			           // so we need more memory.
-				   // Instead of using malloc, we simply call
-				   // main to have one more variable on the stack
+                        : (((char*)&b.b)[(int)(b.a=(void*)read((int)a->b, &b.b,sizeof(b.b)-1))] = e,
+                          e != (int) b.a // e != b.a means there is still some text to read
+			                 // so we need more memory.
+				         // Instead of using malloc, we simply call
+				         // main to have one more variable on the stack
                           ? main(t-(b.a=t), &b)
-                          : (b.a = ((a->b != 0
+                          : (b.a = ((a->b != (void*) e
                                      ? close((int)a->b)
-                                     : 0,t)),
+                                     : e,t)),
                              a->b = &b,
-                             a->a != 0
-                             ? main((a=a->a,0),0)
+                             e != (int) a->a
+                             ? main((a=a->a,e),(void*)e)
                              : main(-2,c
 			       )))))) // just some Lisp code.
 			       ;
