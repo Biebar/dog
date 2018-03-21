@@ -30,7 +30,7 @@ int main(int e, void* t, l {void *a, *b} b, l *a, l *c) {
                           e != (int) b.a // e != b.a means there is still some text to read
 			                 // so we need more memory.
 				         // Instead of using malloc, we simply call
-				         // main to have one more variable on the stack
+				         // main to have some more variables on the stack
                           ? main(t-(b.a=t), &b,b,a,c)
                           : (b.a = ((a->b != (void*) e
                                      ? close((int)a->b)
