@@ -6,7 +6,7 @@ l {
 } *a, *c = NULL;
 
 int main(int e, void* t) {
-	l b; // we wont need any other variable
+	l b; // we won't need any other variable
 
 	// this expression always evaluates to 0
 	return e == -1
