@@ -1,8 +1,8 @@
+NOWARNINGS = -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-int-conversion
 
 all: dog
 
-dog:
-	gcc dog.c -o dog -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-int-conversion
-
+dog: dog.c
+	gcc $< -o $@ ${NOWARNINGS}
 clean:
 	rm dog
