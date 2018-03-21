@@ -1,4 +1,4 @@
-NOWARNINGS = -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-int-conversion
+NOWARNINGS = -w
 
 all: dog
 
