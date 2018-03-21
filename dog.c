@@ -26,10 +26,11 @@ int main(int e, void* t, l b) {
                        ? EXIT_SUCCESS
                        : main(main((a=0,-1),((l*)t)->b,b),((l*)t)->a,b)
                      : (e == 1
-                        ? main(c - (a = c == 0
-                                        ? b.a = b.b = 0,
-                                          c = &b
-                                        : c),
+                        ? main((a = c == 0
+                                    ? b.a = b.b = 0,
+                                      c = &b
+                                    : c,
+			        0),
 			       0,b)
                         : (((char*)&b.b)[(int)(b.a=(void*)read((int)a->b, &b.b,sizeof(b.b)-1))] = e,
                           e != (int) b.a // e != b.a means there is still some text to read
