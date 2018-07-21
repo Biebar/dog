@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int main(int e, void* t, struct l {void *a, *b} b, struct l *a, struct l *c) {
+int main(int e, void* t, struct l {struct l *a, *b} b, struct l *a, struct l *c) {
 	return (e <= 0) & e
                ? write(a,
                        t ? &((struct l*)t)->b + main(e, ((struct l*)t)->a, b, a, c) - 2*e : t,
@@ -21,7 +21,7 @@ int main(int e, void* t, struct l {void *a, *b} b, struct l *a, struct l *c) {
 			  main(0,0,(b.a=b.b=0,b),c,c)
                         : (b.b = (long)read(a->b, &b.b, 7)<<56 | ((long)b.b & ((unsigned long)-1>>8)),
 			  (long)b.b>>56
-                          ? main(t-(b.a=t), &b,b,a,c)
+                          ? main(t-(void*)(b.a=t), &b,b,a,c)
                           : (b.a = ((a->b
                                      ? close(a->b)
                                      : e,t)),

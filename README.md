@@ -41,7 +41,7 @@ The solution to the abovementioned problems is simple. I made a program `dog` wh
 
 If you want to get better at coding in C or PHP, you might want to take a look at `dog.c`. The code is concise and self-documented. The "single source of truth" paradigm is implemented by putting the entire code in the function `main`.
 
-Since all of the files contents are stored in memory, memory leaks are a real issue. To avoid this, the best practice is to not allocate any memory. Since `dog.c` only uses 5 variables, the spatial complexity is O(1). Moreover, there are no control structures. Since there are no `while` or `for`, the time complexity is also O(1).
+Since all of the files contents are stored in memory, memory leaks are a real issue. To avoid this, the best practice is to not allocate any memory. Since `dog.c` only uses 5 variables, the spatial complexity is O(1). Moreover, there are no control structuresi. Since there are no `while` or `for`, the time complexity is also O(1).
 
 One of the main advantages of writing a program in C is the use of pointers. 'dog.c' make full use of this, and most variables are pointers. Some are even a 'struct' of two pointers. The only regretable exception is `argc` which does not conform to C's best practices.
 
