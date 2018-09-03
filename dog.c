@@ -10,14 +10,14 @@ struct l {struct l *a, *b} b,a,*t;
                || (e > 1
                   && !main((a.a&&((b.a=0),1)||(b.a=a.b),e-1),
 			    t,b,0,&b,
-			    (*(long*)(b.a=((void**)t)[e-1])&((unsigned long)-1>>48)^45)
+			    (*(long*)(b.a=((void**)t)[e-1])&((size_t)-1>>48)^45)
 			    &&(b.b=open(b.a,0))||(b.b=0)
 			    )
                   || (e < 0
                      && !(t && main(main(e+1,t->b,b,0,a.b)-3,t->a,b,a))
                      || (e & 1
                         && !main(0,b,0,a.b,a.b,a.a&&(a.b=&b),b.a=b.b=0)
-                        || ((long)(b.b = (long)read(a.a->b, &b.b, 7)<<56 | ((long)b.b & ((unsigned long)-1>>8)))>>56
+                        || ((long)(b.b = (long)read(a.a->b, &b.b, 7)<<56 | ((long)b.b & ((size_t)-1>>8)))>>56
                           && !main(t-(b.a=t), &b,b,a)
                           || (b.a = (a.a->b
                                      && close(a.a->b)
